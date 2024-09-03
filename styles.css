@@ -1,37 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 32px;
-  width: 600px;
-  height: 984px;
+  width: 100%;
   margin: 0;
   font-family: Inter;
 }
 
 .header {
-  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   height: 130px;
-  padding: 19px;
-  padding-top: 0;
-  text-align: center;
   background-color: #1b54dd;
 }
 
 .img {
-  width: 132px;
+  width: 100%;
   height: 100px;
-  padding-top: 42px;
 }
 
-.i-am-beyonce {
-  width: 480px;
-  height: 44px;
+.title {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: auto;
   margin-top: 0px;
+  align-items: center;
   text-align: center;
-  padding-top: 18px;
   color: #1a2028;
 }
 
@@ -48,29 +54,26 @@ body {
 }
 
 .cta_btn {
-  text-align: center;
-  background-color: #1b54dd;
-  color: white;
   width: 110px;
   height: 41px;
   padding-top: 0px;
-}
-
-.cta_text {
+  border: none;
+  color: white;
   font-size: 14px;
   font-weight: 600;
   line-height: 16.94px;
-  text-align: center;
-  justify-content: center;
+  background-color: #1b54dd;
 }
 
 .imgOffice {
-  width: 480px;
-  height: 270px;
+  width: 75%;
+  height: auto;
 }
 h3 {
-  width: 480px;
-  height: 85px;
+  width: 75%;
+  height: auto;
+  padding-left: 30px;
+  padding-right: 30px;
   color: #1a2028;
   font-size: 14px;
   font-weight: 400;
@@ -78,13 +81,15 @@ h3 {
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
+  size: 14;
 }
 
-.legs {
-  background: #e8e8e8;
-  padding: 19px;
-  width: 600px;
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
   height: 181px;
-  text-align: center;
-  vertical-align: middle;
+  background: #e8e8e8;
 }
